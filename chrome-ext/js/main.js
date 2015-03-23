@@ -29,7 +29,7 @@ chrome.contextMenus.create({
 				copy(data.url);
 				window.open(data.url, Math.random());
 			}else{
-				alert(xhr.statuText);
+				alert(xhr.statusText);
 			}
 		});
 		xhr.open('POST', `http://localhost:3232/share/url?url=${info.srcUrl}`);
